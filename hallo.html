@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title> mijn site </title>
+		<script type="text/javascript">
+
+
+			//input score uitslagen
+			var aankoopbedrag = parseInt(prompt("Wat is het aankoopbedrag?"));
+
+			//totaalbedrag en bezorgkosten
+			if(aankoopbedrag >= 25){
+				alert("Het totaalbedrag is " + aankoopbedrag + " Euro. Je bestelling wordt gratis bezorgd!");
+			}
+			if(aankoopbedrag < 25){
+				var totaalbedrag = aankoopbedrag+3.95;
+				alert("Het totaalbedrag incl. bezorgkosten is " + totaalbedrag + " Euro.")
+			}
+			
+
+		</script>
+	</head>
+	<body>
+		<h1>hallo!</h1>
+	</body>
+</html>

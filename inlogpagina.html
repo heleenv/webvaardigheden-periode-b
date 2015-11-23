@@ -1,0 +1,49 @@
+<html>
+ <head>
+	<title>week 02 - puzzel 01</title>
+	<SCRIPT TYPE="text/javascript">
+
+		//inloggegevens input
+		var accountUsername = "Heleen";
+		var accountPassword = "xoHVxo";
+
+		function login(){
+			//haal de gegevens op
+			var username = document.getElementById("username").value;
+			var pass = document.getElementById("password").value;
+
+			if(username == ""){
+				document.getElementById("message").innerHTML = "voer username in";
+			}else{
+				if(pass=="")
+				document.getElementById("message").innerHTML = "voer wachtwoord in";
+			}	else {
+				if(username == accountUsername){
+					if(pass == accountPassword){
+					document.getElementById("message").innerHTML = "ingelogd!";
+
+	
+					}
+				}else{
+					document.getElementById("message").innerHTML = "verkeerd username";
+				}
+				}
+		}
+		
+
+		
+	</SCRIPT>
+</head>
+<body>
+	<input type="text" id="username" /><br/>
+	<input type="text" id="pass" /><br/>
+	<button onclick="login">Login</button>
+
+	<p id="message">...</p>
+
+
+
+
+
+</body>
+</html>

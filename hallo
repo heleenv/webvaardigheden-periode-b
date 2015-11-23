@@ -1,0 +1,14 @@
+<html>
+	<head> 
+		<title> mijn site </title>
+		<script type="text/javascript">
+
+			alert("hallo world");
+
+		</script>
+	</head>
+	<body>
+		<h1>hallo!</h1>
+	</body>
+
+</html>
